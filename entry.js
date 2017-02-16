@@ -47,3 +47,5 @@
     }
     touchAndLog();
 
+  console.log('holle git')
+
