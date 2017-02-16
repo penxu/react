@@ -5,7 +5,7 @@
     //console.log(a);
     import modB from './b'
 
-    require('./style.css');
+    require('./style.scss');
 
     let div = document.getElementById('d1');
 
@@ -20,7 +20,7 @@
         return val >= compareVal
     }
 
-  //Ìí¼Ó¹ºÎï³µ¹¦ÄÜ
+  //æ·»åŠ è´­ç‰©è½¦åŠŸèƒ½
   const addToCart = (cart, item, quantity) => {
     cart.items.push({
         item,

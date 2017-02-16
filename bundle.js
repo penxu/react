@@ -79,7 +79,7 @@ Object.defineProperty(exports, "__esModule", {
 /**************************/
 exports.default = {
     a: '师姐',
-    b: '情人节快乐，你在干什么你好北京'
+    b: '123456'
 };
 
 /***/ }),
@@ -98,8 +98,8 @@ if(content.locals) module.exports = content.locals;
 if(false) {
 	// When the styles change, update the <style> tags
 	if(!content.locals) {
-		module.hot.accept("!!./node_modules/css-loader/index.js!./style.css", function() {
-			var newContent = require("!!./node_modules/css-loader/index.js!./style.css");
+		module.hot.accept("!!./node_modules/css-loader/index.js!./node_modules/.6.0.0@sass-loader/lib/loader.js!./style.scss", function() {
+			var newContent = require("!!./node_modules/css-loader/index.js!./node_modules/.6.0.0@sass-loader/lib/loader.js!./style.scss");
 			if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 			update(newContent);
 		});
@@ -173,7 +173,7 @@ exports = module.exports = __webpack_require__(2)();
 
 
 // module
-exports.push([module.i, "body{\r\n    background: salmon;\r\n    color: #ffffff;\r\n    font-size: 50px;\r\n    text-shadow: 2px 2px 3px #000;\r\n}", ""]);
+exports.push([module.i, "body h1 {\n  background: salmon;\n  color: #ffffff;\n  font-size: 50px;\n  text-shadow: 2px 2px 3px #0f0; }\n", ""]);
 
 // exports
 
@@ -444,8 +444,8 @@ var _b2 = _interopRequireDefault(_b);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 __webpack_require__(1); /**
-                         * Created by Amy on 2017/2/10.
-                         */
+                          * Created by Amy on 2017/2/10.
+                          */
 //var a = require('./a');
 //console.log(a);
 
@@ -453,6 +453,39 @@ __webpack_require__(1); /**
 var div = document.getElementById('d1');
 
 div.innerHTML = '<h1>holle webpack</h1>' + _b2.default.a + _b2.default.b;
+
+[0, 15, 30, 45, 60, 75, 90, 105, 120].map(function (time, index) {
+    console.log(time);
+    console.log(index, 1111);
+});
+function compare(val, compareVal) {
+    return val >= compareVal;
+}
+
+//添加购物车功能
+var addToCart = function addToCart(cart, item, quantity) {
+    cart.items.push({
+        item: item,
+        quantity: quantity
+    });
+    //console.log(cart,111)
+    return cart;
+};
+var originalCart = {
+    items: []
+};
+var cart = addToCart(originalCart, {
+    name: 'Digital SLR Camera',
+    price: '1495'
+}, 1);
+function touchAndLog(touchFn) {
+    var data = { key: 'value' };
+    touchFn(data);
+    console.log(data.key);
+}
+touchAndLog();
+
+console.log('holle git');
 
 /***/ })
 /******/ ]);
